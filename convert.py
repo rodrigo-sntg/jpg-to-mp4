@@ -8,7 +8,7 @@ import glob
 caminhoArquivos= '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/imgs/'
 
 # pasta + nome do arquivo de saída
-output= '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/result/result.mp4'
+output= '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/result/result.avi'
 
 #configuração padrão
 width = 1920
@@ -40,7 +40,7 @@ for i in range(len(imagens)):
     listaImagens.append(resized)
     
 #declaração do obj utilizado para gerar o video
-out = cv2.VideoWriter(output,cv2.VideoWriter_fourcc(*'mp4v'), fps, size)
+out = cv2.VideoWriter(output,cv2.VideoWriter_fourcc(*'DIVX'), fps, size)
 for i in range(len(listaImagens)):
     # inserindo as imagens no video
     out.write(listaImagens[i])

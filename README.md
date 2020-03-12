@@ -1,14 +1,15 @@
 # Conversor de Imagens para MP4
 
-# How to run in Windows
+# Como instalar python no windows
 Seguir instruções em:
 https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html
 
-## Installing Libs
-pip3 install opencv-python
 
 
 ## chamando a função
+### Instalando biblioteca necessária
+    pip3 install opencv-python  
+
 ### argumentos
     -i - Em qual pasta estão as imagens  
     -o - Nome do arquivo de output ou pasta + nome  

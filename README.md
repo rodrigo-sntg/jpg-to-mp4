@@ -2,7 +2,7 @@
 
 # Como instalar python no windows
 Seguir instruções em:
-https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html
+https://www.python.org/downloads/
 
 
 

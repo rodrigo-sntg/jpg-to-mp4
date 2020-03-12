@@ -14,5 +14,4 @@ pip3 install opencv-python
     -o - Nome do arquivo de output ou pasta + nome  
 
 ### Exemplo
-
-python3 convert.py -i '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/imgs/' -o '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/result/teste.avi'
+    python3 convert.py -i '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/imgs/' -o '/home/rodrigo/Documents/jpg-to-mp4/py-convert-mp4/result/teste.avi'

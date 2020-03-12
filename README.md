@@ -4,6 +4,5 @@
 Seguir instruções em:
 https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html
 
-## Installing Libs
-pip3 install opencv-python
-pip3 install numpy
+## Using
+pipenv run python3 convert.py

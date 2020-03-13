@@ -11,7 +11,7 @@ Double click no arquivo para executar.
 
 ### Linux
 Entrar na pasta dist, baixar o arquivo convert-gui-linux  
-Abrir o terminal na pasta onde baixou o arquivo e executar com ./convert-gui-linux
+Abrir o terminal na pasta onde baixou o arquivo e executar com ./convert-gui-linux  
 Ou clicar duas vezes no arquivo para abrir.
 
 

@@ -89,7 +89,7 @@ def convert(inputFile, outputFile, largura, altura, inputFps):
 			# inserindo as imagens no video 
 			out.write(listaImagens[i]) 
 			#gerar o video 
-			out.release() 
+		out.release() 
 		return 'Exportação Efetuada com sucesso.'
 	except expression as identifier:
 		return 'Não foi possível exportar.'

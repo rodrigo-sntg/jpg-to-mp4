@@ -4,6 +4,15 @@
 Seguir instruções em:
 https://www.python.org/downloads/
 
+## Executando
+### Windows
+Entrar na pasta dist, baixar o arquivo convert-gui-full.exe  
+Double click no arquivo para executar.
+
+### Linux
+Entrar na pasta dist, baixar o arquivo convert-gui-linux  
+Abrir o terminal na pasta onde baixou o arquivo e executar com ./convert-gui-linux
+Ou clicar duas vezes no arquivo para abrir.
 
 
 ## chamando a função

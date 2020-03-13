@@ -26,7 +26,7 @@ def main(argv):
 		# if user closes window or clicks cancel 
 			break 
 		if event in ('Ok'):	
-			if values[0] == '' or values[1] == '':
+			if values[0] == '':
 				sg.Popup('Resultado', 'Insira dados válidos.')
 				continue
 			
@@ -53,33 +53,42 @@ def convert(inputFile, outputFile, largura, altura, inputFps, nome):
 		if nome == '':
 			nome = 'result.mp4'
 
-		output = outputFile + '/' +nome
+		output = ''
+		if outputFile == 'Pasta':
+			output = inputFile + '/' +nome
 		
 		
 		#configuração padrão 
-		width = int(largura)
 		if largura == '':
-			width = 1920 
+			largura = 1920 
+		width = int(largura)
 		
-		height = int(altura)
 		if altura == '':
-			height = 1080 
+			altura = 1080 
+		height = int(altura)
 			
 		dim = (width, height) 
 		size = (width,height) 
 		
-		fps = float(inputFps)
 		if inputFps == '':
-			fps = 0.5 
+			inputFps = 0.5 
+		fps = float(inputFps)
 			
 		listaImagens = [] 
+		
 		#lê os arquivos na pasta 
-		imagens = [f for f in os.listdir(caminhoArquivos) if isfile(join(caminhoArquivos, f))] 
+		imagens = []
+		relevant_path = caminhoArquivos
+		included_extensions = ['jpg','jpeg', 'bmp', 'png', 'gif']
+		imagens = [fn for fn in os.listdir(relevant_path) if any(fn.endswith(ext) for ext in included_extensions)]
+		
+		
 		#ordenação dos arquivos pelo nome 
 		imagens.sort(key = lambda x: x[5:-4]) 
 		for i in range(len(imagens)): 
 		# pega o nome do arquivo
 			filename=caminhoArquivos + imagens[i]
+			
 			
 	#pega o arquivo a partir do nome 
 			img = cv2.imread(filename) 

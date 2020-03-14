@@ -53,25 +53,28 @@ def convert(inputFile, outputFile, largura, altura, inputFps, nome):
 		if nome == '':
 			nome = 'result.mp4'
 
-		output = ''
 		if outputFile == 'Pasta':
-			output = inputFile + '/' +nome
+			outputFile = inputFile
+		else:
+			outputFile = outputFile + '/'
+
+		output = outputFile + nome
 		
 		
 		#configuração padrão 
 		if largura == '':
-			largura = 1920 
+			largura = 1080
 		width = int(largura)
 		
 		if altura == '':
-			altura = 1080 
+			altura = 720
 		height = int(altura)
 			
 		dim = (width, height) 
 		size = (width,height) 
 		
 		if inputFps == '':
-			inputFps = 0.5 
+			inputFps = 1.0
 		fps = float(inputFps)
 			
 		listaImagens = [] 
